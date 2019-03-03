@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MonitorCallsSMS</string>
+    <string name="permissions_denial">In order to use this app, you must accept the permissions.</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/iconcm"
+    tools:context="com.example.micha.monitorcallssms.MainActivity">
+
+    <!--napis nad przyciskiem do wyświetlenia historii połączeń-->
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-97dp"
+        android:layout_marginStart="70dp"
+        android:text="Historia połączeń"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <!--napis nad przyciskiem do wyświetlenia historii sms-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Historia SMS"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <!--przycisk z własną ikoną (słuchawka) -->
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="91dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="97dp"
+        app:srcCompat="@mipmap/phoneicon" />
+
+    <!--napis pod przyciskiem do wyświetlania historii połączeń-->
+    <TextView
+        android:id="@+id/textViewp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginTop="185dp"
+        android:text="wyświetl"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <!--przycisk z własną ikoną (koperta) -->
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:layout_toStartOf="@+id/textView2"
+        app:srcCompat="@mipmap/messicon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_marginStart="53dp"
+        android:text="wyświetl"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <!--przycisk z własną ikoną (android) - wyjście z aplikacji -->
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="97dp"
+        android:layout_height="117dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@mipmap/close" />
+
+    <!--przycisk związany z własną bazą SQLite -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_bright"
+        android:text="SQLite" />
+
+
+</RelativeLayout>
